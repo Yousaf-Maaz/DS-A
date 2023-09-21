@@ -22,6 +22,6 @@ Trees: Binary trees, binary search trees (BST), AVL trees, red-black trees, and 
 Graphs: Graph representations (adjacency matrix and adjacency list), graph traversal algorithms (DFS and BFS).
 Each data structure folder contains the following:
 
-Implementation code in various programming languages (e.g., Python, Java, C++).
+Implementation code in various programming languages ( C++).
 Explanatory documentation and comments within the code.
 Usage examples to help you understand how to use the data structure.
