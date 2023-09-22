@@ -219,6 +219,38 @@ public:
             s--;
         }
     }
+
+ void Shift(int s)
+    {
+        int temp;
+        if (s >= 0)
+            for (int i = 0; i < s; i++)
+            {
+                tail();
+                temp = *curr;
+                for (int i = length; i > 1; i--)
+                {
+                    curr = (curr - 1);
+                    back();
+                }
+                *curr = temp;
+            }
+
+        else
+        {
+            for (int i = 0; i < (-1 * s); i++)
+            {
+                start();
+                temp = *curr;
+                for (int i = 1; i < length; i++)
+                {
+                    curr = (curr + 1);
+                    next();
+                    *curr = temp;
+                }
+            }
+        }
+    }
 };
 
 int main()
